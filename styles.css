@@ -9,6 +9,11 @@ body {
     /* background-color:rgba(245, 207, 145, 0.8); */
     background-color: rgba(204, 245, 144, 0.66);
 }
+p {
+    margin: 0;
+    padding: auto;
+    
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -19,6 +24,10 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
 }
+nav :hover {
+color:black;
+}
+
 header {
     margin: 0 auto;
     text-align: center;
@@ -28,6 +37,10 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: brown;
 }
+/* align header 1 with the body text */
+/* header h1 {
+    text-align: 0 Auto;
+} */
 img {
     /* border-image-width:number auto */
     border: bold;
@@ -41,9 +54,41 @@ address {
     flex-wrap: wrap;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+address :hover {
+    color:black;
+}
+/* .hero-banner {
+    background-image: url("https://thenounproject.com/photo/amazing-view-of-sunset-over-the-mountain-with-dark-cloudscape-bGOqVb/.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right; 
+} */
+
+
 .page-wrapper {
     max-width:60%;
     margin-left: auto;
     margin-right: auto;
 }
-
+.flex-container {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+.flex-item {
+    display: flex;
+    align-items:flex-start;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRALqELclerTIMe7V-G4Og3w3EQ_z50YnP-g&usqp=CAU.jpg");
+    background-size:cover;
+}
+.flex-container :hover {
+    color:black;
+}
+.flex-item div {
+    background-size: auto;
+}
